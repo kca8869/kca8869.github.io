@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kevin Armijo</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__name">Kevin Armijo</h1>
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Portfolio</a>
+          </li>
+        </ul>
+        <ul class="header__nav header__nav--social">
+          <li class="header__nav-item header__nav-item--social">
+            <a href="#" class="header__nav-link header__nav-link--social"><span>Github</span></a>
+          </li>
+          <li class="header__nav-item header__nav-item--social">
+            <a class="header__nav-link header__nav-link--social" href="#"><span>Free code camp</span></a>
+          </li>
+          <li class="header__nav-item header__nav-item--social">
+            <a class="header__nav-link header__nav-link--social" href="#"><span>codepen</span></a>
+          </li>
+        </ul>
+        <p class="header__email">Karmijo8869@gmail.com</p>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about__text col-6">
+          <p>The best web designer ever,ever. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="about__pic col-6">
+          <img class="about__img" src="img/seaotter.jpg" alt="">
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="caccordion" id="caccordion">
+          <ul class="caccordion__list caccordion__list--link">
+            <li class="caccordion__item caccordion__item--link active" id="cssgridLink">
+              <h3 href="#" class="caccordion__link">CSS Grid</h3>
+            </li>
+            <li class="caccordion__item caccordion__item--link" id="tetrisLink">
+              <h3 href="#" class="caccordion__link" >JavaScript Tetris</h3>
+            </li>
+            <li class="caccordion__item caccordion__item--link" id="projectThreeLink">
+              <h3 href="#" class="caccordion__link" >Project 3</h3>
+            </li>
+            <li class="caccordion__item caccordion__item--link" id="projectFourLink">
+              <h3 href="#" class="caccordion__link" >Project 4</h3>
+            </li>
+          </ul>
+
+          <ul class="caccordion__list caccordion__list--content">
+            <li class="caccordion__item caccordion__item--content" id="cssgridLinkContent">
+              <div class="example-card">
+                <div class="example-card__description">
+                  <h2>CSS Grid</h2>
+                  <p class="caccordion__content">This is an example tours website that I designed myself starting with Adobe XD.  I have included it showcase responsive design, CSS Grid and SASS.</p>
+                  <a href="gameIndex.html" target="_blank">Preveiw</a>
+                </div>
+                <img src="img/divewithkevin.png" target="_blank" alt="">
+                </div>
+
+              </li>
+            <li class="caccordion__item caccordion__item--content" id="tetrisLinkContent">
+              <div class="example-card">
+                <h2>Tetris</h2>
+                <p class="caccordion__content" >Tetris game I wrote with pure vanilla JavaScript. This is the most complicated game that I have written to learn object-oriented programming.</p>
+                <a href="gameIndex.html" target="_blank">Preveiw</a>
+              </div>
+
+              <img src="img/Tetris.png" alt="">
+            </li>
+            <li class="caccordion__item caccordion__item--content" id="projectThreeLinkContent">
+              <h2>Project 3</h2>
+              <p class="caccordion__content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </li>
+            <li class="caccordion__item caccordion__item--content" id="projectFourLinkContent">
+              <h2>Project 4</h2>
+              <p class="caccordion__content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="row">
+          <div class="accordion col-12" id="accordion">
+            <div class="card d-flex">
+              <div class="card-header" id="cssGridHeading">
+                <h2>
+                  <button type="button" name="button" class="btn btn-link" data-toggle="collapse" data-target="#cssGridCollapse">CSS Grid</button>
+                </h2>
+              </div><!-/end card heading-/>
+              <div class="collapse show" id="cssGridCollapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div><!-/end card body-/>
+              </div><!-/end card collapse-/>
+            </div><!-/end card -/>
+            <div class="card">
+              <div class="card-header" id="tetris">
+                <h2>
+                  <button type="button" name="button" class="btn btn-link" data-toggle="collapse" data-target="#tetrisCollapse">Tetris</button>
+                </h2>
+              </div><!-/end card header-/>
+              <div class="collapse" id="tetrisCollapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div><!-/end card -/>
+          </div><!-/end accordion-/>
+          <!-/ <div class="about__pic col-6">
+            <img class="about__img" src="img/seaotter.jpg" alt="">
+          </div> -/>
+        </div> -->
+      </section>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>

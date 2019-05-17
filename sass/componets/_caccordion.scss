@@ -1,0 +1,62 @@
+.caccordion{
+  display: flex;
+  align-items: flex-start;
+  font-size: 2rem;
+
+  &__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //padding: 2rem;
+    &--content{
+      border: 2px black solid;
+      box-shadow: 0 0  5px rgba(0,0,0,0.5);
+
+
+    }
+  }
+
+  &__item{
+    padding: 2rem;
+    position: relative;
+    transition: all .4s;
+    &--link{
+      background-color: #eee;
+      &:hover{
+        background-color: #aaa;
+        color: blue;
+      }
+    }
+    &--content{
+      //display: none;
+      display: flex;
+    }
+  }
+
+  &__link{
+    color:inherit;
+  }
+}
+
+.active{
+  background-color: white;
+  z-index: 2;
+  box-shadow: -2px 0  5px rgba(0,0,0,0.5);
+  border-top: 2px black solid;
+  border-left: 2px black solid;
+  border-bottom: 2px black solid;
+  &::after{
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: -2px;
+    top:0;
+  }
+  &:hover{
+    background-color: white;
+    color: black;
+  }
+}

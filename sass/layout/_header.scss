@@ -1,0 +1,40 @@
+.header{
+  display: flex;
+  align-items: center;
+//  background-color: #2F4643;
+  //justify-content: space-between;
+&__name{
+   padding: 2rem;
+   font-size: 5rem;
+   letter-spacing: .5rem;
+   font-family: 'Playfair Display', serif;
+}
+  &__nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  //  justify-content: center;
+    &-item{
+     padding: 2rem;
+      //justify-self: center;
+    }
+    &-link{
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    align-self: center;
+    transition: all .4s;
+      &:hover{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  &__email{
+    flex-grow: 2;
+    text-align: right;
+    padding: 0 2rem;
+    font-size: 2rem;
+  }
+}

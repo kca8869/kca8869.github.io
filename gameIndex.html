@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+    <style media="screen">
+      canvas{
+        background-color: #eee;
+        /* margin: 0 auto; */
+        display: block;
+      }
+      #canvasNext{
+        background-color: #777;
+      }
+      .flex{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .game-over,
+      .pause{
+        color: #ddd;
+        font-size: 30px;
+        text-align: center;
+        background: rgba(0,0,0,.5);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 600px;
+        width: 400px;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="game-over">
+        <h1>Game Over</h1>
+        <h1>Click to play agian</h1>
+      </div>
+      <div class="pause">
+        <h1>Pause</h1>
+      </div>
+      <canvas id="canvas" width="200" height="600"></canvas>
+      <div class="side-view">
+        <canvas id="canvasNext" width="300" height="300"></canvas>
+        <h2 class="text lines">Lines: <span class="lines-number"></span></h2>
+        <h2 class="text score">Score: <span class="score-number"></span></h2>
+        <h2>Space = Drop</h2>
+        <h2>P = Pause</h2>
+      </div>
+
+    </div>
+
+    <script src="js/game.js" charset="utf-8"></script>
+  </body>
+</html>
